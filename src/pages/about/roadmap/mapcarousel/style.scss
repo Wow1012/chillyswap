@@ -1,0 +1,47 @@
+.roadmap--wrapper {
+  padding-top: 200px;
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+
+  .react-multi-carousel-list {
+    overflow: visible;
+    padding-bottom: 50px;
+  }
+
+  .react-multi-carousel-item {
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    transform: translate(0px, -100px) scale(0.9);
+    // transform: rotateY(45deg);
+  }
+
+  .react-multi-carousel-item--active{
+    transform: none;
+  }
+
+  .react-multi-carousel-dot button {
+    border-color: #FFF;
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .react-multi-carousel-dot--active button {
+    background: #FFF;
+  }
+
+  .react-multi-carousel-dot-list {
+    left: 0;
+    transform: translate(-50%, 0);
+    right: 100%;
+
+    @media (min-width: 768px) {
+      gap: 12px;
+    }
+  }
+}
+
